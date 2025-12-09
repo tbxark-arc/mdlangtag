@@ -26,7 +26,7 @@ func NewRootCommand() *cobra.Command {
 			if err := cli.FinalizeConfig(&cfg, args); err != nil {
 				return err
 			}
-			runner := cli.NewRunner(cfg, detector.NewEnryDetector())
+			runner := cli.NewRunner(cfg, detector.NewChromaDetector())
 			return runner.Run()
 		},
 	}

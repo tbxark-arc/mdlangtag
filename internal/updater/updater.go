@@ -39,12 +39,7 @@ func UpdateDocument(doc *parser.Document, det detector.Detector, opts Options) (
 			return nil
 		}
 
-		hint := detector.Hint{
-			LineCount:  lines,
-			Candidates: opts.Candidates,
-		}
-
-		lang, ok, err := det.Detect(cb.Code, hint)
+		lang, ok, err := det.Detect(cb.Code)
 		if err != nil {
 			return err
 		}

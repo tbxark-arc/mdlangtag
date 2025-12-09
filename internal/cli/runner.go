@@ -53,7 +53,6 @@ func (r *Runner) Run() error {
 		DefaultLang:  r.Config.DefaultLang,
 		MinCodeLines: r.Config.MinLines,
 		Verbose:      r.Config.Verbose,
-		Candidates:   r.Config.GetCandidates(),
 	}
 
 	results := make(chan fileResult, len(files))

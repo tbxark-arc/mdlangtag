@@ -4,12 +4,12 @@ A powerful CLI tool that automatically detects programming languages in fenced c
 
 ## Features
 
-- 🔍 **Automatic Language Detection**: Uses [go-enry](https://github.com/go-enry/go-enry) to intelligently detect code block languages
+- 🔍 **Automatic Language Detection**: Uses [chroma](https://github.com/alecthomas/chroma) to intelligently detect code block languages
 - 📝 **Batch Processing**: Process single files or entire directories recursively
 - ⚡ **Concurrent Processing**: Handle multiple files in parallel for improved performance
 - 🎯 **Smart Updates**: Optionally force-update existing language tags or preserve them
 - 🛡️ **Safe Operations**: Preview changes via stdout before writing to files
-- 🔧 **Flexible Configuration**: Support for fallback languages, minimum line thresholds, and language candidates
+- 🔧 **Flexible Configuration**: Support for fallback languages and minimum line thresholds
 
 ## Install
 
@@ -42,7 +42,6 @@ mdlangtag -w docs/
     --min-lines int      Skip blocks with fewer than this many lines (default: 0)
 -v, --verbose            Enable verbose logging (default: false)
 -j, --concurrency int    Number of files to process concurrently (default: 1)
-    --candidates string  Comma-separated list of language candidates for detection
 ```
 
 ### Examples
@@ -62,9 +61,6 @@ mdlangtag -w --default "text" README.md
 
 # Process with multiple concurrent workers
 mdlangtag -w -j 4 docs/
-
-# Limit detection to specific language candidates
-mdlangtag -w --candidates "python,javascript,go" docs/
 ```
 
 ## How It Works

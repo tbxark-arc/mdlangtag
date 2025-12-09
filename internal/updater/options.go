@@ -6,7 +6,6 @@ type Options struct {
 	DefaultLang  string
 	MinCodeLines int
 	Verbose      bool
-	Candidates   []string
 }
 
 // Stats captures counts from a single update run.
