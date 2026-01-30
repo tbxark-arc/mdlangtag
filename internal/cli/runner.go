@@ -6,9 +6,9 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/TBXark/mdlangtag/internal/detector"
-	"github.com/TBXark/mdlangtag/internal/parser"
-	"github.com/TBXark/mdlangtag/internal/updater"
+	"github.com/tbxark-arc/mdlangtag/internal/detector"
+	"github.com/tbxark-arc/mdlangtag/internal/parser"
+	"github.com/tbxark-arc/mdlangtag/internal/updater"
 )
 
 // Runner owns the CLI execution pipeline.

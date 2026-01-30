@@ -1,4 +1,4 @@
-module github.com/TBXark/mdlangtag
+module github.com/tbxark-arc/mdlangtag
 
 go 1.25.5
 

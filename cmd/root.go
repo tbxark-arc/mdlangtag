@@ -3,8 +3,8 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/TBXark/mdlangtag/internal/cli"
-	"github.com/TBXark/mdlangtag/internal/detector"
+	"github.com/tbxark-arc/mdlangtag/internal/cli"
+	"github.com/tbxark-arc/mdlangtag/internal/detector"
 )
 
 // Execute runs the root command.

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/TBXark/mdlangtag/cmd"
+	"github.com/tbxark-arc/mdlangtag/cmd"
 )
 
 func main() {

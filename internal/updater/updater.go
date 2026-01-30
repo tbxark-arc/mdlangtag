@@ -6,8 +6,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/TBXark/mdlangtag/internal/detector"
-	"github.com/TBXark/mdlangtag/internal/parser"
+	"github.com/tbxark-arc/mdlangtag/internal/detector"
+	"github.com/tbxark-arc/mdlangtag/internal/parser"
 )
 
 type replacement struct {
